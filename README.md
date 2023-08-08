@@ -35,13 +35,13 @@ Submit button Sends the IP address and code entered in entry to the database by 
 
 **Third Page**
 If the submitted IP addrss and code are presented in database , Then we find a random User Name from Database by API and we move to the third page where it shows Welcome(UserName!)
-![Alt Text](images/page3.png)
+![Alt Text](images/page3.jpeg)
 
 **WebApi Projec**
 Web api project gives us IP address of the computer on which computer is running on, we are getting this by <https://api.ipify.org?format=json> we can get this by HttpContext but in that case we will get the IP address of android device is running on.
 
 Project uses Conveyor extesion to consume local web api over mobile devices. Here is the swagger end point screen short.
-![Alt Text](images/swagger.jpeg)
+![Alt Text](images/swagger.png)
 
 **Database**
 Database script is in database folder
