@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NetworkCodeAuthentication.Views.WelcomeView"
+             BackgroundColor="#EFEFEF">
+    <ContentPage.Content>
+        <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Label x:Name="welcomeLabel" Style="{StaticResource LargLblStyle}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Welcome " />
+                        <Span Text="{Binding UserName}" />
+                        <Span Text="!" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

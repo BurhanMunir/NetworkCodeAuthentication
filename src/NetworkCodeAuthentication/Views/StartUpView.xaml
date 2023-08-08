@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NetworkCodeAuthentication.Views.StartUpView"
+             BackgroundColor="#EFEFEF" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" RowSpacing="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Label x:Name="codeLabel" Text="{Binding RandomCode}" Style="{StaticResource LargLblStyle}"/>
+            <Label x:Name="networkLabel" Text="{Binding CurrentNetwork}" FontSize="16" TextColor="#555" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="1"/>
+            <Image Source="refresh.png" Grid.Row="2" HorizontalOptions="Center" VerticalOptions="Center"
+                   HeightRequest="40" IsVisible="{Binding RefreshBtnVisible}">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding RefreshCommand}"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Button Text="Next" Command="{Binding NextCommand}" Grid.Row="3"
+                  Style="{StaticResource BtnStyle}"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

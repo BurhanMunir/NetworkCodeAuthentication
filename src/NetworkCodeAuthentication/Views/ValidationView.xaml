@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NetworkCodeAuthentication.Views.ValidationView"
+             BackgroundColor="#EFEFEF" NavigationPage.HasNavigationBar="False"
+             NavigationPage.HasBackButton="False">
+    <ContentPage.Content>
+        <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" RowSpacing="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Label Text="Enter the code to play." Style="{StaticResource LargLblStyle}"/>
+            <Entry x:Name="codeEntry" Text="{Binding ValidationCode}" Placeholder="Enter code" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,20" WidthRequest="200" Grid.Row="1"/>
+            <Button Text="Submit" Command="{Binding SubmitCommand}" Style="{StaticResource BtnStyle}" Grid.Row="2"/>
+            <Button Text="Back" Command="{Binding BackCommand}"  BackgroundColor="#6C757D" Style="{StaticResource BtnStyle}" Grid.Row="3"/>
+          
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
