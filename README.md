@@ -31,11 +31,11 @@ and two buttons first is Submit and second is back
 (As second page loads it agains get the IP address of the computer by Api)
 Back Button moves to the page1
 Submit button Sends the IP address and code entered in entry to the database by API for verification as if We are connected to the same Network and moves to the page3 whtich is Welcome Page
-![Alt Text](images/page2.jpeg)
+![Alt Text](images/page2.png)
 
 **Third Page**
 If the submitted IP addrss and code are presented in database , Then we find a random User Name from Database by API and we move to the third page where it shows Welcome(UserName!)
-![Alt Text](images/page3.jpeg)
+![Alt Text](images/page3.png)
 
 **WebApi Projec**
 Web api project gives us IP address of the computer on which computer is running on, we are getting this by <https://api.ipify.org?format=json> we can get this by HttpContext but in that case we will get the IP address of android device is running on.
